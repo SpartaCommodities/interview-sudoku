@@ -1,7 +1,5 @@
 package com.spartacommodities.interviews.sudoku;
 
-import java.util.Arrays;
-
 public class SudokuBoard {
     private final int[][] board;
 
@@ -9,11 +7,8 @@ public class SudokuBoard {
         this.board = board;
     }
 
-    public void setNumber(int x, int y, int number) {
-        board[x][y] = number;
-    }
-
+    // TODO add implementation
     public boolean isSolved() {
-        return false; //todo
+        return false;
     }
 }

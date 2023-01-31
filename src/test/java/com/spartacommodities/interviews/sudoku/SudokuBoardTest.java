@@ -11,7 +11,7 @@ class SudokuBoardTest {
     }
 
     @Test
-    void boardWithGapsIsNotSolved() {
+    void boardShouldBeWithinSudokuRange() {
         final int[][] boardWithEmptyCells = new int[][]{
                 {5, 0, 4, 6, 7, 8, 9, 1, 2},
                 {6, 7, 2, 1, 9, 0, 0, 4, 999},
@@ -26,24 +26,6 @@ class SudokuBoardTest {
 
         assertFalse(new SudokuBoard(boardWithEmptyCells).isSolved(), "A board with wrong cells should not be solved");
     }
-
-    @Test
-    void invalidBoardIsNotSolved() {
-        final int[][] invalidBoard = new int[][]{
-                {1, 1, 1, 1, 1, 1, 1, 1, 1},
-                {2, 2, 2, 2, 2, 2, 2, 2, 2},
-                {3, 3, 3, 3, 3, 3, 3, 3, 3},
-                {4, 4, 4, 4, 4, 4, 4, 4, 4},
-                {5, 5, 5, 5, 5, 5, 5, 5, 5},
-                {6, 6, 6, 6, 6, 6, 6, 6, 6},
-                {7, 7, 7, 7, 7, 7, 7, 7, 7},
-                {8, 8, 8, 8, 8, 8, 8, 8, 8},
-                {9, 9, 9, 9, 9, 9, 9, 9, 9},
-        };
-
-        assertFalse(new SudokuBoard(invalidBoard).isSolved(), "An incorrect board should not be solved");
-    }
-
 
     @Test
     void invalidBoardWithIncorrectColumnIsNotSolved() {

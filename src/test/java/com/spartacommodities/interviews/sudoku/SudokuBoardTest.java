@@ -45,6 +45,23 @@ class SudokuBoardTest {
     }
 
     @Test
+    void invalidBoardIsNotSolved() {
+        final int[][] invalidBoard = new int[][]{
+                {8, 8, 8, 8, 8, 8, 8, 8, 8},
+                {2, 2, 2, 2, 2, 2, 2, 2, 2},
+                {4, 4, 4, 4, 4, 4, 4, 4, 4},
+                {5, 5, 5, 5, 5, 5, 5, 5, 5},
+                {6, 6, 6, 6, 6, 6, 6, 6, 6},
+                {7, 7, 7, 7, 7, 7, 7, 7, 7},
+                {1, 1, 1, 1, 1, 1, 1, 1, 1},
+                {9, 9, 9, 9, 9, 9, 9, 9, 9},
+                {3, 3, 3, 3, 3, 3, 3, 3, 3},
+        };
+
+        assertFalse(new SudokuBoard(invalidBoard).isSolved(), "An incorrect board should not be solved");
+    }
+
+    @Test
     void invalidBoardWithIncorrectRowIsNotSolved() {
         final int[][] invalidBoard = new int[][]{
                 {5, 3, 4, 6, 7, 8, 9, 1, 2},

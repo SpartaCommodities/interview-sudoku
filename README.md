@@ -2,7 +2,7 @@
 
 This is a Gradle project written using IntelliJ. It can be run from the IDE, or from the CLI using `./gradlew test` or its Windows counterpart.
 
-We will solve the exercise together during the interview, but feel free to prepare and bring your own solution(s) and we'll work on a follow-up.
+We will solve the exercise together during the interview. Use of Copilot and similar tooling is not allowed.
 
 The purpose of the exercise is to pair and code something within the time limit, not finding the most performant solution, or judging your code structure and naming conventions.
 

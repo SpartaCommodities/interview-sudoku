@@ -14,7 +14,7 @@ class SudokuBoardTest {
     void boardShouldBeWithinSudokuRange() {
         final int[][] boardWithEmptyCells = new int[][]{
                 {5, 3, 4, 6, 7, 8, 9, 1, 2},
-                {6, 7, 2, 1, 9, 0, 0, 4, 999},
+                {6, 7, 2, 1, 9, 5, 8, 4, 999},
                 {1, 9, 0, 0, 0, 0, 5, 6, 7},
                 {0, 5, 9, 7, 0, 0, 4, 0, 3},
                 {4, 2, 6, 8, 5, 3, 0, 0, 0},

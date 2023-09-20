@@ -13,7 +13,7 @@ class SudokuBoardTest {
     @Test
     void boardShouldBeWithinSudokuRange() {
         final int[][] boardWithEmptyCells = new int[][]{
-                {5, 0, 4, 6, 7, 8, 9, 1, 2},
+                {5, 3, 4, 6, 7, 8, 9, 1, 2},
                 {6, 7, 2, 1, 9, 0, 0, 4, 999},
                 {1, 9, 0, 0, 0, 0, 5, 6, 7},
                 {0, 5, 9, 7, 0, 0, 4, 0, 3},
